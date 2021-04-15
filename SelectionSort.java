@@ -5,12 +5,12 @@ public class SelectionSort {
     public SelectionSort() {
     }
 
-    /* A simple SelectionSort algorithm
-     * pre-condition:
-     * post-condition:
-     * inputs:
-     * outputs:
-     * special conditions:
+		/* A simple SelectionSort algorithm
+     * pre-condition: x is an array of integers
+     * post-condition: x is a sorted array of integers
+     * inputs: An array of integers
+     * outputs: A sorted array of integers
+     * special conditions: none
      */
     public int[] basicSelectionSort(int[] x) {
         for (int i = 0; i < x.length; ++i) {
@@ -18,7 +18,7 @@ public class SelectionSort {
                 if (x[i] > x[j]) {
                     temp = x[i];
                     x[i] = x[j];
-                    temp = x[j];
+                    x[j] = temp;
                 }
             } // end of inner for loop
         } // end of outer for loop
